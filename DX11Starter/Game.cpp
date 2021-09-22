@@ -310,6 +310,9 @@ void Game::CreateBasicGeometry()
 	entityList.push_back(entity6);
 
 	sky = new Sky(skyMesh, sampler, device, skyBox, pixelShaderSky, vertexShaderSky);
+
+	vsp = 0.0f;
+	grv = 0.00002f;
 }
 
 
@@ -336,30 +339,41 @@ void Game::Update(float deltaTime, float totalTime)
 	// Quit if the escape key is pressed
 	if (GetAsyncKeyState(VK_ESCAPE))
 		Quit();
-	/*
-	if (GetAsyncKeyState('W') & 0x8000)
+	if (GetAsyncKeyState(VK_UP) & 0x8000)
 	{
-		entity1->GetTransform()->MoveAbsolute(0.0f, 0.0001f, 0.0f);
+		entity1->GetTransform()->MoveAbsolute(0.0f, 0.0f, 0.001f);
 	}
-	if (GetAsyncKeyState('S') & 0x8000)
+	if (GetAsyncKeyState(VK_DOWN) & 0x8000)
 	{
-		entity1->GetTransform()->MoveAbsolute(0.0f, -0.0001f, 0.0f);
+		entity1->GetTransform()->MoveAbsolute(0.0f, 0.0f, -0.001f);
 	}
-	if (GetAsyncKeyState('A') & 0x8000)
+	if (GetAsyncKeyState(VK_LEFT) & 0x8000)
 	{
-		entity1->GetTransform()->MoveAbsolute(-0.0001f, 0.0f, 0.0f);
+		entity1->GetTransform()->MoveAbsolute(-0.001f, 0.0f, 0.0f);
 	}
-	if (GetAsyncKeyState('D') & 0x8000)
+	if (GetAsyncKeyState(VK_RIGHT) & 0x8000)
 	{
-		entity1->GetTransform()->MoveAbsolute(0.0001f, 0.0f, 0.0f);
+		entity1->GetTransform()->MoveAbsolute(0.001f, 0.0f, 0.0f);
 	}
-	*/
 
-	entity1->GetTransform()->Rotate(0.0f, 0.1f * deltaTime, 0.0f);
-	entity2->GetTransform()->Rotate(0.0f, 0.1f * deltaTime, 0.0f);
-	entity3->GetTransform()->Rotate(0.0f, 0.1f * deltaTime, 0.0f);
-	entity4->GetTransform()->Rotate(0.0f, 0.1f * deltaTime, 0.0f);
-	entity5->GetTransform()->Rotate(0.0f, 0.1f * deltaTime, 0.0f);
+	// Jump
+	if (GetAsyncKeyState('Z') & 0x8000)
+	{
+		vsp = 0.02f;
+	}
+
+	// Calculate gravity
+	vsp -= grv;
+
+	// Apply physics
+	entity1->GetTransform()->MoveAbsolute(0.0f,vsp,0.0f);
+
+
+	//entity1->GetTransform()->Rotate(0.0f, 0.1f * deltaTime, 0.0f);
+	//entity2->GetTransform()->Rotate(0.0f, 0.1f * deltaTime, 0.0f);
+	//entity3->GetTransform()->Rotate(0.0f, 0.1f * deltaTime, 0.0f);
+	//entity4->GetTransform()->Rotate(0.0f, 0.1f * deltaTime, 0.0f);
+	//entity5->GetTransform()->Rotate(0.0f, 0.1f * deltaTime, 0.0f);
 
 	/*
 	entity2->GetTransform()->MoveAbsolute(0.1f * deltaTime, 0.0f, 0.0f);

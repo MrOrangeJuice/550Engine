@@ -1,0 +1,5 @@
+Z:\IGMProfile\Documents\GitHub\550Engine\DX11Starter\x64\Debug\DX11Starter.vcxproj.CopyComplete
+Z:\IGMProfile\Documents\GitHub\550Engine\DX11Starter\x64\Debug\DX11Starter.exe
+Z:\IGMProfile\Documents\GitHub\550Engine\DX11Starter\x64\Debug\xapobaseredist.pdb
+Z:\IGMProfile\Documents\GitHub\550Engine\DX11Starter\x64\Debug\xaudio2_9redist.pdb
+Z:\IGMProfile\Documents\GitHub\550Engine\DX11Starter\x64\Debug\xaudio2_9redist.dll

@@ -144,5 +144,9 @@ private:
 
 	ID3D11SamplerState* sampler;
 	ID3D11SamplerState* clampSampler;
+
+	// Game variables
+	float vsp;
+	float grv;
 };
 
