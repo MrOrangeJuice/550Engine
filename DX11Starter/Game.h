@@ -148,5 +148,6 @@ private:
 	// Game variables
 	float vsp;
 	float grv;
+	boolean prevJump;
 };
 
