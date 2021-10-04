@@ -303,10 +303,12 @@ void Game::CreateBasicGeometry()
 	entity6->GetTransform()->Scale(0.1f, 0.1f, 0.1f);
 
 	entityList.push_back(entity1);
+	/*
 	entityList.push_back(entity2);
 	entityList.push_back(entity3);
 	entityList.push_back(entity4);
 	entityList.push_back(entity5);
+	*/
 	entityList.push_back(entity6);
 
 	sky = new Sky(skyMesh, sampler, device, skyBox, pixelShaderSky, vertexShaderSky);
@@ -341,19 +343,19 @@ void Game::Update(float deltaTime, float totalTime)
 		Quit();
 	if (GetAsyncKeyState(VK_UP) & 0x8000)
 	{
-		entity1->GetTransform()->MoveAbsolute(0.0f, 0.0f, 0.001f);
+		entity1->GetTransform()->MoveAbsolute(0.0f, 0.0f, 0.005f);
 	}
 	if (GetAsyncKeyState(VK_DOWN) & 0x8000)
 	{
-		entity1->GetTransform()->MoveAbsolute(0.0f, 0.0f, -0.001f);
+		entity1->GetTransform()->MoveAbsolute(0.0f, 0.0f, -0.005f);
 	}
 	if (GetAsyncKeyState(VK_LEFT) & 0x8000)
 	{
-		entity1->GetTransform()->MoveAbsolute(-0.001f, 0.0f, 0.0f);
+		entity1->GetTransform()->MoveAbsolute(-0.005f, 0.0f, 0.0f);
 	}
 	if (GetAsyncKeyState(VK_RIGHT) & 0x8000)
 	{
-		entity1->GetTransform()->MoveAbsolute(0.001f, 0.0f, 0.0f);
+		entity1->GetTransform()->MoveAbsolute(0.005f, 0.0f, 0.0f);
 	}
 
 	// Jump
@@ -365,8 +367,11 @@ void Game::Update(float deltaTime, float totalTime)
 	// Calculate gravity
 	vsp -= grv;
 
+	// Clamp for floor
+	if ((entity1->GetTransform()->GetPosition().y + vsp) < -1.0f) vsp = 0.0f;
+
 	// Apply physics
-	entity1->GetTransform()->MoveAbsolute(0.0f,vsp,0.0f);
+	entity1->GetTransform()->MoveAbsolute(0.0f, vsp, 0.0f);
 
 
 	//entity1->GetTransform()->Rotate(0.0f, 0.1f * deltaTime, 0.0f);
