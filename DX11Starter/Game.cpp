@@ -314,7 +314,10 @@ void Game::CreateBasicGeometry()
 	sky = new Sky(skyMesh, sampler, device, skyBox, pixelShaderSky, vertexShaderSky);
 
 	vsp = 0.0f;
-	grv = 0.00002f;
+	grv = 0.00001f;
+	canJump = false;
+	prevJump = false;
+	keyJump = false;
 }
 
 
@@ -358,17 +361,54 @@ void Game::Update(float deltaTime, float totalTime)
 		entity1->GetTransform()->MoveAbsolute(0.005f, 0.0f, 0.0f);
 	}
 
-	// Jump
+	// Get Jump Key
 	if (GetAsyncKeyState('Z') & 0x8000)
 	{
-		vsp = 0.02f;
+		keyJump = true;
+	}
+	else
+	{
+		keyJump = false;
+	}
+
+	if (prevJump && !keyJump)
+	{
+		keyJumpReleased = true;
+	}
+	else
+	{
+		keyJumpReleased = false;
+	}
+
+	if (keyJumpReleased)
+	{
+		canJump = true;
+	}
+
+	// Jump
+	if (keyJump && canJump)
+	{
+		vsp = 0.015f;
+	}
+
+	// Variable jump height
+	if (vsp > 0 && !keyJump) //if you're moving upwards in the air but not holding down jump
+	{
+		vsp *= 0.98; //essentially, divide your vertical speed
 	}
 
 	// Calculate gravity
 	vsp -= grv;
 
 	// Clamp for floor
-	if ((entity1->GetTransform()->GetPosition().y + vsp) < -1.0f) vsp = 0.0f;
+	if ((entity1->GetTransform()->GetPosition().y + vsp) < -1.0f)
+	{
+		vsp = 0.0f;
+		canJump = true;
+	}
+
+	// Record jump for this frame for next
+	prevJump = keyJump;
 
 	// Apply physics
 	entity1->GetTransform()->MoveAbsolute(0.0f, vsp, 0.0f);

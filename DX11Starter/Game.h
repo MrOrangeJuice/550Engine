@@ -149,5 +149,8 @@ private:
 	float vsp;
 	float grv;
 	boolean prevJump;
+	boolean canJump;
+	boolean keyJump;
+	boolean keyJumpReleased;
 };
 
