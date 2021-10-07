@@ -2,27 +2,27 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>Z:\IGMProfile\Documents\GitHub\550Engine\DX11Starter\x64\Debug\DX11Starter.exe</FullPath>
+      <FullPath>C:\Users\BigBertha\Documents\GitHub\550Engine\DX11Starter\x64\Debug\DX11Starter.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles>
     <ContentFile>
-      <FullPath>Z:\IGMProfile\Documents\GitHub\550Engine\DX11Starter\x64\Debug\NormalMapPS.cso</FullPath>
+      <FullPath>C:\Users\BigBertha\Documents\GitHub\550Engine\DX11Starter\x64\Debug\NormalMapPS.cso</FullPath>
     </ContentFile>
     <ContentFile>
-      <FullPath>Z:\IGMProfile\Documents\GitHub\550Engine\DX11Starter\x64\Debug\NormalMapVS.cso</FullPath>
+      <FullPath>C:\Users\BigBertha\Documents\GitHub\550Engine\DX11Starter\x64\Debug\NormalMapVS.cso</FullPath>
     </ContentFile>
     <ContentFile>
-      <FullPath>Z:\IGMProfile\Documents\GitHub\550Engine\DX11Starter\x64\Debug\PixelShader.cso</FullPath>
+      <FullPath>C:\Users\BigBertha\Documents\GitHub\550Engine\DX11Starter\x64\Debug\PixelShader.cso</FullPath>
     </ContentFile>
     <ContentFile>
-      <FullPath>Z:\IGMProfile\Documents\GitHub\550Engine\DX11Starter\x64\Debug\SkyPS.cso</FullPath>
+      <FullPath>C:\Users\BigBertha\Documents\GitHub\550Engine\DX11Starter\x64\Debug\SkyPS.cso</FullPath>
     </ContentFile>
     <ContentFile>
-      <FullPath>Z:\IGMProfile\Documents\GitHub\550Engine\DX11Starter\x64\Debug\SkyVS.cso</FullPath>
+      <FullPath>C:\Users\BigBertha\Documents\GitHub\550Engine\DX11Starter\x64\Debug\SkyVS.cso</FullPath>
     </ContentFile>
     <ContentFile>
-      <FullPath>Z:\IGMProfile\Documents\GitHub\550Engine\DX11Starter\x64\Debug\VertexShader.cso</FullPath>
+      <FullPath>C:\Users\BigBertha\Documents\GitHub\550Engine\DX11Starter\x64\Debug\VertexShader.cso</FullPath>
     </ContentFile>
   </ContentFiles>
   <SatelliteDlls />

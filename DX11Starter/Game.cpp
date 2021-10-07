@@ -315,7 +315,7 @@ void Game::CreateBasicGeometry()
 
 	vsp = 0.0f;
 	grv = 0.00001f;
-	canJump = false;
+	canJump = true;
 	prevJump = false;
 	keyJump = false;
 }
@@ -371,6 +371,7 @@ void Game::Update(float deltaTime, float totalTime)
 		keyJump = false;
 	}
 
+	// Get Jump released
 	if (prevJump && !keyJump)
 	{
 		keyJumpReleased = true;
@@ -386,9 +387,10 @@ void Game::Update(float deltaTime, float totalTime)
 	}
 
 	// Jump
-	if (keyJump && canJump)
+	if (keyJump && canJump && ((entity1->GetTransform()->GetPosition().y - grv) < -1.0f))
 	{
 		vsp = 0.015f;
+		canJump = false;
 	}
 
 	// Variable jump height
@@ -404,7 +406,6 @@ void Game::Update(float deltaTime, float totalTime)
 	if ((entity1->GetTransform()->GetPosition().y + vsp) < -1.0f)
 	{
 		vsp = 0.0f;
-		canJump = true;
 	}
 
 	// Record jump for this frame for next
