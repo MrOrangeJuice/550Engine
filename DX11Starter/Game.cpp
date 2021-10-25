@@ -271,6 +271,7 @@ void Game::CreateBasicGeometry()
 	mesh4 = new Mesh(GetFullPathTo("../../Assets/Models/Banana.obj").c_str(), device.Get());
 	mesh5 = new Mesh(GetFullPathTo("../../Assets/Models/pear.obj").c_str(), device.Get());
 	mesh6 = new Mesh(GetFullPathTo("../../Assets/Models/Desk.obj").c_str(), device.Get());
+	mesh7 = new Mesh(GetFullPathTo("../../Assets/Models/cube.obj").c_str(), device.Get());
 
 	skyMesh = mesh2;
 
@@ -289,6 +290,7 @@ void Game::CreateBasicGeometry()
 	entity4 = new Entity(mesh4, material4);
 	entity5 = new Entity(mesh5, material5);
 	entity6 = new Entity(mesh6, material6);
+	entity7 = new Entity(mesh7, material1);
 
 	// Move and scale entities
 	entity1->GetTransform()->MoveAbsolute(10.0f, 0.0f, 0.0f);
@@ -301,6 +303,8 @@ void Game::CreateBasicGeometry()
 	entity5->GetTransform()->MoveAbsolute(-10.0f, 2.0f, 0.0f);
 	entity6->GetTransform()->MoveAbsolute(0.0f, -5.0f, 8.0f);
 	entity6->GetTransform()->Scale(0.1f, 0.1f, 0.1f);
+	entity7->GetTransform()->MoveAbsolute(-2.0f, 1.0f, 2.0f);
+	entity7->GetTransform()->Scale(5.0f, 5.0f, 5.0f);
 
 	entityList.push_back(entity1);
 	/*
@@ -310,6 +314,7 @@ void Game::CreateBasicGeometry()
 	entityList.push_back(entity5);
 	*/
 	entityList.push_back(entity6);
+	entityList.push_back(entity7);
 
 	sky = new Sky(skyMesh, sampler, device, skyBox, pixelShaderSky, vertexShaderSky);
 
@@ -318,6 +323,7 @@ void Game::CreateBasicGeometry()
 	canJump = true;
 	prevJump = false;
 	keyJump = false;
+	//previousTime = timeGetTime();
 }
 
 
@@ -341,24 +347,27 @@ void Game::OnResize()
 // --------------------------------------------------------
 void Game::Update(float deltaTime, float totalTime)
 {
+	// Generate gravity
+	grv = 0.2f * deltaTime;
+
 	// Quit if the escape key is pressed
 	if (GetAsyncKeyState(VK_ESCAPE))
 		Quit();
 	if (GetAsyncKeyState(VK_UP) & 0x8000)
 	{
-		entity1->GetTransform()->MoveAbsolute(0.0f, 0.0f, 0.005f);
+		entity1->GetTransform()->MoveAbsolute(0.0f, 0.0f, 5.0f * deltaTime);
 	}
 	if (GetAsyncKeyState(VK_DOWN) & 0x8000)
 	{
-		entity1->GetTransform()->MoveAbsolute(0.0f, 0.0f, -0.005f);
+		entity1->GetTransform()->MoveAbsolute(0.0f, 0.0f, -5.0f * deltaTime);
 	}
 	if (GetAsyncKeyState(VK_LEFT) & 0x8000)
 	{
-		entity1->GetTransform()->MoveAbsolute(-0.005f, 0.0f, 0.0f);
+		entity1->GetTransform()->MoveAbsolute(-5.0f * deltaTime, 0.0f, 0.0f);
 	}
 	if (GetAsyncKeyState(VK_RIGHT) & 0x8000)
 	{
-		entity1->GetTransform()->MoveAbsolute(0.005f, 0.0f, 0.0f);
+		entity1->GetTransform()->MoveAbsolute(5.0f * deltaTime, 0.0f, 0.0f);
 	}
 
 	// Get Jump Key
@@ -389,14 +398,14 @@ void Game::Update(float deltaTime, float totalTime)
 	// Jump
 	if (keyJump && canJump && ((entity1->GetTransform()->GetPosition().y - grv) < -1.0f))
 	{
-		vsp = 0.015f;
+		vsp = 20.0f * deltaTime;
 		canJump = false;
 	}
 
 	// Variable jump height
 	if (vsp > 0 && !keyJump) //if you're moving upwards in the air but not holding down jump
 	{
-		vsp *= 0.98; //essentially, divide your vertical speed
+		vsp *= (0.98 * deltaTime); //essentially, divide your vertical speed
 	}
 
 	// Calculate gravity
@@ -407,6 +416,9 @@ void Game::Update(float deltaTime, float totalTime)
 	{
 		vsp = 0.0f;
 	}
+
+	// Collsion
+	// if ((entity1->GetTransform()->GetPosition().x))
 
 	// Record jump for this frame for next
 	prevJump = keyJump;

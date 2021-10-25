@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\parro\Documents\GitHub\550Engine\DX11Starter\</FILEPATH>
+      <FILENAME>SimpleShader.h</FILENAME>
+      <LINE>38</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'SimpleConstantBuffer::Size' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>SimpleConstantBuffer::{ctor}</FUNCTION>
+    <DECORATED>??0SimpleConstantBuffer@@QEAA@XZ</DECORATED>
+    <FUNCLINE>38</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>SimpleConstantBuffer::Size</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\parro\Documents\GitHub\550Engine\DX11Starter\</FILEPATH>
+      <FILENAME>SimpleShader.h</FILENAME>
+      <LINE>38</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'SimpleConstantBuffer::BindIndex' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>SimpleConstantBuffer::{ctor}</FUNCTION>
+    <DECORATED>??0SimpleConstantBuffer@@QEAA@XZ</DECORATED>
+    <FUNCLINE>38</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>SimpleConstantBuffer::BindIndex</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

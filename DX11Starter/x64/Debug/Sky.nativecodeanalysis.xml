@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\parro\Documents\GitHub\550Engine\DX11Starter\</FILEPATH>
+      <FILENAME>Sky.cpp</FILENAME>
+      <LINE>3</LINE>
+      <COLUMN>5</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'Sky::vertexBufferVar' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>Sky::{ctor}</FUNCTION>
+    <DECORATED>??0Sky@@QEAA@PEAVMesh@@PEAUID3D11SamplerState@@V?$ComPtr@UID3D11Device@@@WRL@Microsoft@@PEAUID3D11ShaderResourceView@@PEAVSimplePixelShader@@PEAVSimpleVertexShader@@@Z</DECORATED>
+    <FUNCLINE>3</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>Sky::vertexBufferVar</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\parro\Documents\GitHub\550Engine\DX11Starter\</FILEPATH>
+      <FILENAME>Sky.cpp</FILENAME>
+      <LINE>3</LINE>
+      <COLUMN>5</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'Sky::indexBufferVar' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>Sky::{ctor}</FUNCTION>
+    <DECORATED>??0Sky@@QEAA@PEAVMesh@@PEAUID3D11SamplerState@@V?$ComPtr@UID3D11Device@@@WRL@Microsoft@@PEAUID3D11ShaderResourceView@@PEAVSimplePixelShader@@PEAVSimpleVertexShader@@@Z</DECORATED>
+    <FUNCLINE>3</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>Sky::indexBufferVar</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

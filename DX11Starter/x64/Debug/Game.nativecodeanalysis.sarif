@@ -1,0 +1,2725 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "The enum type 'DirectX::WIC_LOADER_FLAGS' is unscoped. Prefer 'enum class' over 'enum' (Enum.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/packages/directxtk_desktop_2017.2021.1.10.1/include/WICTextureLoader.h"
+                },
+                "region": {
+                  "startLine": 164,
+                  "startColumn": 5,
+                  "endLine": 164,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??UDirectX@@YA?AW4WIC_LOADER_FLAGS@0@W410@0@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::mesh1' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::mesh1"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::mesh3' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::mesh3"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::mesh2' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::mesh2"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::mesh4' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::mesh4"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::mesh5' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::mesh5"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::mesh6' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::mesh6"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::mesh7' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::mesh7"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::entity1' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::entity1"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::entity2' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::entity2"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::entity3' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::entity3"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::entity4' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::entity4"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::entity5' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::entity5"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::entity6' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::entity6"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::entity7' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::entity7"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::material1' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::material1"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::material2' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::material2"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::material3' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::material3"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::material4' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::material4"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::material5' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::material5"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::material6' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::material6"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::material7' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::material7"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::camera' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::camera"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::vertexBufferVar' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::vertexBufferVar"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::directionalLight' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::directionalLight"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::directionalLight2' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::directionalLight2"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::directionalLight3' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::directionalLight3"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::pointLight' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::pointLight"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::ambientColor' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::ambientColor"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::pixelShader' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::pixelShader"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::vertexShader' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::vertexShader"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::pixelShaderNormal' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::pixelShaderNormal"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::vertexShaderNormal' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::vertexShaderNormal"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::pixelShaderSky' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::pixelShaderSky"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::vertexShaderSky' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::vertexShaderSky"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::bronzeAlbedo' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::bronzeAlbedo"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::bronzeMetal' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::bronzeMetal"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::bronzeNormals' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::bronzeNormals"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::bronzeRoughness' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::bronzeRoughness"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::cobblestoneAlbedo' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::cobblestoneAlbedo"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::cobblestoneMetal' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::cobblestoneMetal"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::cobblestoneNormals' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::cobblestoneNormals"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::cobblestoneRoughness' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::cobblestoneRoughness"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::floorAlbedo' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::floorAlbedo"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::floorMetal' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::floorMetal"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::floorNormals' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::floorNormals"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::floorRoughness' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::floorRoughness"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::paintAlbedo' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::paintAlbedo"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::paintMetal' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::paintMetal"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::paintNormals' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::paintNormals"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::paintRoughness' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::paintRoughness"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::scratchedAlbedo' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::scratchedAlbedo"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::scratchedMetal' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::scratchedMetal"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::scratchedNormals' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::scratchedNormals"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::scratchedRoughness' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::scratchedRoughness"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::apricotAlbedo' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::apricotAlbedo"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::apricotNormals' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::apricotNormals"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::appleAlbedo' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::appleAlbedo"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::appleNormals' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::appleNormals"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::orangeAlbedo' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::orangeAlbedo"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::orangeNormals' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::orangeNormals"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::bananaAlbedo' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::bananaAlbedo"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::bananaNormals' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::bananaNormals"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::pearAlbedo' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::pearAlbedo"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::pearNormals' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::pearNormals"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::tableAlbedo' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::tableAlbedo"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::tableNormals' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::tableNormals"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::toonRamp' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::toonRamp"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::toonRampSpecular' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::toonRampSpecular"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::skyBox' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::skyBox"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::sky' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::sky"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::skyMesh' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::skyMesh"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::sampler' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::sampler"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::clampSampler' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::clampSampler"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::vsp' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::vsp"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::grv' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::grv"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::prevJump' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::prevJump"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::canJump' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::canJump"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::keyJump' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::keyJump"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::keyJumpReleased' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::keyJumpReleased"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Game::previousTime' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 7,
+                  "endLine": 19,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Game@@QEAA@PEAUHINSTANCE__@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Game::previousTime"
+          }
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.28.29914.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "commandLine": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29910\\bin\\HostX86\\x64\\c1xx.dll\" -ACf{1F7B090C-16DB-4822-966A-A93D26ED4681} -ACpmspft140.dll -Alint -D_PREFAST_ -D_AST_FE_ -Analyze -zm0x0095B1C0 -il C:\\Users\\parro\\AppData\\Local\\Temp\\_CL_b5a836ecast -typedil -f Game.cpp -Ze -D_MSC_EXTENSIONS -Zp16 -pc \\:/ -D_MSC_VER=1928 -D_MSC_FULL_VER=192829914 -D_MSC_BUILD=0 -D_M_AMD64=100 -ZILP448 -D_M_X64=100 -D_WIN64 -D_WIN32 -GR -D_CPPRTTI -I C:\\Users\\parro\\Documents\\GitHub\\550Engine\\DX11Starter\\packages\\Microsoft.XAudio2.Redist.1.2.6\\build\\native\\include -I C:\\Users\\parro\\Documents\\GitHub\\550Engine\\DX11Starter\\packages\\directxtk_desktop_2017.2021.1.10.1\\include -nologo -W 3 -diagnostics:column -D_GUARDOVERFLOW_CRT_ALLOCATORS=1 -Ot -DUSING_XAUDIO2_REDIST -DHAS_DIRECTXTK -DCODE_ANALYSIS -D_MBCS -EHs -D_CPPUNWIND -EHc -D__MSVC_RUNTIME_CHECKS -RTCs -RTCu -MDd -D_DEBUG -D_MT -D_DLL -GS -D_M_FP_PRECISE -permissive- -Zc:wchar_t -Zc:forScope -Fox64\\Debug\\Game.obj -Fdx64\\Debug\\vc142.pdb -Gd -analyze:projectdirectory C:\\Users\\parro\\Documents\\GitHub\\550Engine\\DX11Starter -analyze:rulesetdirectory ;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\\\Rule Sets; -analyze:ruleset C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\Rule Sets\\NativeRecommendedRules.ruleset -analyze:quiet -analyze:plugin C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29910\\bin\\HostX86\\x86\\EspXEngine.dll -FC -errorreport:prompt -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29910\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29910\\atlmfc\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\ucrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\cppwinrt -I C:\\Users\\parro\\Documents\\GitHub\\550Engine\\DX11Starter\\Include\\um",
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///c:/users/parro/documents/github/550engine/dx11starter/transform.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "814cb7ffb117a48dff2ff7aed96ad3c1"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/parro/documents/github/550engine/dx11starter/transform.h"
+          },
+          "hashes": {
+            "md5": "dae5754fa1dfdfd79483119d0ea5810c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Sky.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "463d26da90e942d2c99f0208c0613104"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/parro/documents/github/550engine/dx11starter/sky.h"
+          },
+          "hashes": {
+            "md5": "85d69587c008736252967cd4eb96a043"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/parro/documents/github/550engine/dx11starter/simpleshader.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "dfe83500294d3d185c6b0ff8415555f9"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/parro/documents/github/550engine/dx11starter/mesh.h"
+          },
+          "hashes": {
+            "md5": "0eec4851862c08d6a8ae5779bac741e3"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/parro/documents/github/550engine/dx11starter/vertex.h"
+          },
+          "hashes": {
+            "md5": "4eaef3fcb2c52657e598ed86250cd014"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/parro/documents/github/550engine/dx11starter/camera.h"
+          },
+          "hashes": {
+            "md5": "d7186b0bb205b2dafb5a11c7389ba534"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/parro/documents/github/550engine/dx11starter/simpleshader.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "45525e780682fcd466e6a0382a34ad61"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Mesh.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "d32016009d60646d7453f6e9e2d5b5a6"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Material.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "319eae67b8bd3edb0fc58fbc24ff6748"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/parro/documents/github/550engine/dx11starter/material.h"
+          },
+          "hashes": {
+            "md5": "cb4ae5f3eb748a4ecc0f05cf128c103a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/packages/directxtk_desktop_2017.2021.1.10.1/include/WICTextureLoader.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "6df998c157151074b5abc0edac47824d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/parro/documents/github/550engine/dx11starter/main.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "d52a8785b9a8c5e8cb14ce7b7d6921bc"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/parro/documents/github/550engine/dx11starter/game.h"
+          },
+          "hashes": {
+            "md5": "5957fe7afe73a4d4bbfab77816b48fa0"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/parro/documents/github/550engine/dx11starter/dxcore.h"
+          },
+          "hashes": {
+            "md5": "482917bef017c834b018a4ebcd8e502b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/parro/documents/github/550engine/dx11starter/entity.h"
+          },
+          "hashes": {
+            "md5": "bc5e5db5f690057c01c2d89cb3dbe887"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/parro/documents/github/550engine/dx11starter/lights.h"
+          },
+          "hashes": {
+            "md5": "182d3feafecd3abdc9981c8f4570991a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/parro/documents/github/550engine/dx11starter/packages/directxtk_desktop_2017.2021.1.10.1/include/ddstextureloader.h"
+          },
+          "hashes": {
+            "md5": "8310e4d628bf3445e0cf3caf74279feb"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/parro/Documents/GitHub/550Engine/DX11Starter/Game.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "2597fa342dfacf6a0a69580978a1c4d3"
+          }
+        }
+      ]
+    }
+  ]
+}

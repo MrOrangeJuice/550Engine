@@ -40,6 +40,7 @@ private:
 	Mesh* mesh4;
 	Mesh* mesh5;
 	Mesh* mesh6;
+	Mesh* mesh7;
 
 	// Make entities
 	Entity* entity1;
@@ -48,6 +49,7 @@ private:
 	Entity* entity4;
 	Entity* entity5;
 	Entity* entity6;
+	Entity* entity7;
 
 	std::vector<Entity*> entityList;
 
@@ -58,6 +60,7 @@ private:
 	Material* material4;
 	Material* material5;
 	Material* material6;
+	Material* material7;
 
 	// Camera
 	Camera* camera;
@@ -152,5 +155,6 @@ private:
 	boolean canJump;
 	boolean keyJump;
 	boolean keyJumpReleased;
+	DWORD previousTime;
 };
 

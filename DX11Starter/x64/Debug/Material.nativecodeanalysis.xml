@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\parro\Documents\GitHub\550Engine\DX11Starter\</FILEPATH>
+      <FILENAME>Material.cpp</FILENAME>
+      <LINE>3</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'Material::roughness' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>Material::{ctor}</FUNCTION>
+    <DECORATED>??0Material@@QEAA@UXMFLOAT4@DirectX@@MPEAVSimplePixelShader@@PEAVSimpleVertexShader@@PEAUID3D11ShaderResourceView@@PEAUID3D11SamplerState@@333@Z</DECORATED>
+    <FUNCLINE>3</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>Material::roughness</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\parro\Documents\GitHub\550Engine\DX11Starter\</FILEPATH>
+      <FILENAME>Material.cpp</FILENAME>
+      <LINE>3</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'Material::metalness' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>Material::{ctor}</FUNCTION>
+    <DECORATED>??0Material@@QEAA@UXMFLOAT4@DirectX@@MPEAVSimplePixelShader@@PEAVSimpleVertexShader@@PEAUID3D11ShaderResourceView@@PEAUID3D11SamplerState@@333@Z</DECORATED>
+    <FUNCLINE>3</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>Material::metalness</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

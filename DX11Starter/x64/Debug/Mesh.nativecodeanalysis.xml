@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\parro\Documents\GitHub\550Engine\DX11Starter\</FILEPATH>
+      <FILENAME>Mesh.cpp</FILENAME>
+      <LINE>60</LINE>
+      <COLUMN>6</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'Mesh::indNum' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>Mesh::{ctor}</FUNCTION>
+    <DECORATED>??0Mesh@@QEAA@PEBDPEAUID3D11Device@@@Z</DECORATED>
+    <FUNCLINE>60</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>Mesh::indNum</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\parro\Documents\GitHub\550Engine\DX11Starter\</FILEPATH>
+      <FILENAME>Mesh.cpp</FILENAME>
+      <LINE>60</LINE>
+      <COLUMN>6</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'Mesh::indexBuffer' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>Mesh::{ctor}</FUNCTION>
+    <DECORATED>??0Mesh@@QEAA@PEBDPEAUID3D11Device@@@Z</DECORATED>
+    <FUNCLINE>60</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>Mesh::indexBuffer</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\parro\Documents\GitHub\550Engine\DX11Starter\</FILEPATH>
+      <FILENAME>Mesh.cpp</FILENAME>
+      <LINE>60</LINE>
+      <COLUMN>6</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'Mesh::vertexBuffer' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>Mesh::{ctor}</FUNCTION>
+    <DECORATED>??0Mesh@@QEAA@PEBDPEAUID3D11Device@@@Z</DECORATED>
+    <FUNCLINE>60</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>Mesh::vertexBuffer</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>
