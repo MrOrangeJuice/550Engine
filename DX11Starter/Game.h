@@ -150,6 +150,8 @@ private:
 
 	// Game variables
 	float vsp;
+	float hsp;
+	float zsp;
 	float grv;
 	boolean prevJump;
 	boolean canJump;

@@ -1,3 +1,2 @@
 ﻿  Game.cpp
-C:\Users\parro\Documents\GitHub\550Engine\DX11Starter\Game.cpp(408,28): warning C4244: '*=': conversion from 'double' to 'float', possible loss of data
-  DX11Starter.vcxproj -> C:\Users\parro\Documents\GitHub\550Engine\DX11Starter\x64\Debug\DX11Starter.exe
+  DX11Starter.vcxproj -> C:\Users\BigBertha\Documents\GitHub\550Engine\DX11Starter\x64\Debug\DX11Starter.exe

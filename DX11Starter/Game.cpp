@@ -317,9 +317,10 @@ void Game::CreateBasicGeometry()
 	entityList.push_back(entity7);
 
 	sky = new Sky(skyMesh, sampler, device, skyBox, pixelShaderSky, vertexShaderSky);
-
+	hsp = 0.0f;
 	vsp = 0.0f;
-	grv = 0.00001f;
+	zsp = 0.0f;
+	grv = 0.1f;
 	canJump = true;
 	prevJump = false;
 	keyJump = false;
@@ -348,26 +349,39 @@ void Game::OnResize()
 void Game::Update(float deltaTime, float totalTime)
 {
 	// Generate gravity
-	grv = 0.2f * deltaTime;
+	grv = 0.01f;
 
 	// Quit if the escape key is pressed
 	if (GetAsyncKeyState(VK_ESCAPE))
 		Quit();
 	if (GetAsyncKeyState(VK_UP) & 0x8000)
 	{
-		entity1->GetTransform()->MoveAbsolute(0.0f, 0.0f, 5.0f * deltaTime);
+		zsp = 5.0f;
+		//entity1->GetTransform()->MoveAbsolute(0.0f, 0.0f, 5.0f * deltaTime);
 	}
-	if (GetAsyncKeyState(VK_DOWN) & 0x8000)
+	else if (GetAsyncKeyState(VK_DOWN) & 0x8000)
 	{
-		entity1->GetTransform()->MoveAbsolute(0.0f, 0.0f, -5.0f * deltaTime);
+		zsp = -5.0f;
+		//entity1->GetTransform()->MoveAbsolute(0.0f, 0.0f, -5.0f * deltaTime);
 	}
+	else
+	{
+		zsp = 0;
+	}
+
 	if (GetAsyncKeyState(VK_LEFT) & 0x8000)
 	{
-		entity1->GetTransform()->MoveAbsolute(-5.0f * deltaTime, 0.0f, 0.0f);
+		hsp = -5.0f;
+		//entity1->GetTransform()->MoveAbsolute(-5.0f * deltaTime, 0.0f, 0.0f);
 	}
-	if (GetAsyncKeyState(VK_RIGHT) & 0x8000)
+	else if (GetAsyncKeyState(VK_RIGHT) & 0x8000)
 	{
-		entity1->GetTransform()->MoveAbsolute(5.0f * deltaTime, 0.0f, 0.0f);
+		hsp = 5.0f;
+		//entity1->GetTransform()->MoveAbsolute(5.0f * deltaTime, 0.0f, 0.0f);
+	}
+	else
+	{
+		hsp = 0;
 	}
 
 	// Get Jump Key
@@ -396,23 +410,23 @@ void Game::Update(float deltaTime, float totalTime)
 	}
 
 	// Jump
-	if (keyJump && canJump && ((entity1->GetTransform()->GetPosition().y - grv) < -1.0f))
+	if (keyJump && canJump && ((entity1->GetTransform()->GetPosition().y - (grv * deltaTime) < -1.0f)))
 	{
-		vsp = 20.0f * deltaTime;
+		vsp = 15.0f;
 		canJump = false;
 	}
 
 	// Variable jump height
 	if (vsp > 0 && !keyJump) //if you're moving upwards in the air but not holding down jump
 	{
-		vsp *= (0.98 * deltaTime); //essentially, divide your vertical speed
+		vsp *= 0.98f; //essentially, divide your vertical speed
 	}
 
 	// Calculate gravity
 	vsp -= grv;
 
 	// Clamp for floor
-	if ((entity1->GetTransform()->GetPosition().y + vsp) < -1.0f)
+	if ((entity1->GetTransform()->GetPosition().y + (vsp * deltaTime) < -1.0f))
 	{
 		vsp = 0.0f;
 	}
@@ -424,7 +438,8 @@ void Game::Update(float deltaTime, float totalTime)
 	prevJump = keyJump;
 
 	// Apply physics
-	entity1->GetTransform()->MoveAbsolute(0.0f, vsp, 0.0f);
+	entity1->GetTransform()->MoveAbsolute(hsp * deltaTime, 0.0f, zsp * deltaTime);
+	entity1->GetTransform()->MoveAbsolute(0.0f, vsp * deltaTime, 0.0f);
 
 
 	//entity1->GetTransform()->Rotate(0.0f, 0.1f * deltaTime, 0.0f);
