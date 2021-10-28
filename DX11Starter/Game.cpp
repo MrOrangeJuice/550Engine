@@ -357,12 +357,10 @@ void Game::Update(float deltaTime, float totalTime)
 	if (GetAsyncKeyState(VK_UP) & 0x8000)
 	{
 		zsp = 5.0f;
-		//entity1->GetTransform()->MoveAbsolute(0.0f, 0.0f, 5.0f * deltaTime);
 	}
 	else if (GetAsyncKeyState(VK_DOWN) & 0x8000)
 	{
 		zsp = -5.0f;
-		//entity1->GetTransform()->MoveAbsolute(0.0f, 0.0f, -5.0f * deltaTime);
 	}
 	else
 	{
@@ -372,12 +370,10 @@ void Game::Update(float deltaTime, float totalTime)
 	if (GetAsyncKeyState(VK_LEFT) & 0x8000)
 	{
 		hsp = -5.0f;
-		//entity1->GetTransform()->MoveAbsolute(-5.0f * deltaTime, 0.0f, 0.0f);
 	}
 	else if (GetAsyncKeyState(VK_RIGHT) & 0x8000)
 	{
 		hsp = 5.0f;
-		//entity1->GetTransform()->MoveAbsolute(5.0f * deltaTime, 0.0f, 0.0f);
 	}
 	else
 	{
@@ -438,8 +434,10 @@ void Game::Update(float deltaTime, float totalTime)
 	prevJump = keyJump;
 
 	// Apply physics
-	entity1->GetTransform()->MoveAbsolute(hsp * deltaTime, 0.0f, zsp * deltaTime);
-	entity1->GetTransform()->MoveAbsolute(0.0f, vsp * deltaTime, 0.0f);
+	entity1->GetTransform()->MoveAbsolute(hsp * deltaTime, vsp * deltaTime, zsp * deltaTime);
+
+	// Update Camera
+	camera->SetTransform(entity1->GetTransform()->GetPosition().x, 5.0f, (entity1->GetTransform()->GetPosition().z - 20.0f));
 
 
 	//entity1->GetTransform()->Rotate(0.0f, 0.1f * deltaTime, 0.0f);

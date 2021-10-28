@@ -20,4 +20,5 @@ public:
 	DirectX::XMFLOAT4X4 GetViewMatrix();
 	DirectX::XMFLOAT4X4 GetProjectionMatrix();
 	Transform GetTransform();
+	void SetTransform(float x, float y, float z);
 };

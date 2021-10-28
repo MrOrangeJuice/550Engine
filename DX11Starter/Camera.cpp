@@ -107,3 +107,8 @@ Transform Camera::GetTransform()
 {
 	return transform;
 }
+
+void Camera::SetTransform(float x, float y, float z)
+{
+	transform.SetPosition(x, y, z);
+}
