@@ -154,9 +154,12 @@ private:
 	float zsp;
 	float grv;
 	boolean prevJump;
+	boolean keyC;
+	boolean prevC;
 	boolean canJump;
 	boolean keyJump;
 	boolean keyJumpReleased;
+	boolean controlCamera;
 	DWORD previousTime;
 };
 

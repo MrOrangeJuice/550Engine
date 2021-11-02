@@ -3,7 +3,6 @@ Z:\IGMProfile\Documents\GitHub\550Engine\DX11Starter\x64\Debug\DX11Starter.exe
 Z:\IGMProfile\Documents\GitHub\550Engine\DX11Starter\x64\Debug\xapobaseredist.pdb
 Z:\IGMProfile\Documents\GitHub\550Engine\DX11Starter\x64\Debug\xaudio2_9redist.pdb
 Z:\IGMProfile\Documents\GitHub\550Engine\DX11Starter\x64\Debug\xaudio2_9redist.dll
-C:\Users\BigBertha\Documents\GitHub\550Engine\DX11Starter\x64\Debug\DX11Starter.vcxproj.CopyComplete
 C:\Users\BigBertha\Documents\GitHub\550Engine\DX11Starter\x64\Debug\DX11Starter.exe
 C:\Users\BigBertha\Documents\GitHub\550Engine\DX11Starter\x64\Debug\xapobaseredist.pdb
 C:\Users\BigBertha\Documents\GitHub\550Engine\DX11Starter\x64\Debug\xaudio2_9redist.pdb

@@ -304,7 +304,7 @@ void Game::CreateBasicGeometry()
 	entity6->GetTransform()->MoveAbsolute(0.0f, -5.0f, 8.0f);
 	entity6->GetTransform()->Scale(0.1f, 0.1f, 0.1f);
 	entity7->GetTransform()->MoveAbsolute(-2.0f, 1.0f, 2.0f);
-	entity7->GetTransform()->Scale(5.0f, 5.0f, 5.0f);
+	entity7->GetTransform()->Scale(3.0f, 6.0f, 3.0f);
 
 	entityList.push_back(entity1);
 	/*
@@ -323,7 +323,10 @@ void Game::CreateBasicGeometry()
 	grv = 0.1f;
 	canJump = true;
 	prevJump = false;
+	prevC = false;
 	keyJump = false;
+	keyC = false;
+	controlCamera = false;
 	//previousTime = timeGetTime();
 }
 
@@ -349,7 +352,7 @@ void Game::OnResize()
 void Game::Update(float deltaTime, float totalTime)
 {
 	// Generate gravity
-	grv = 0.01f;
+	grv = 30.0f;
 
 	// Quit if the escape key is pressed
 	if (GetAsyncKeyState(VK_ESCAPE))
@@ -390,6 +393,16 @@ void Game::Update(float deltaTime, float totalTime)
 		keyJump = false;
 	}
 
+	// Get Camera Key
+	if (GetAsyncKeyState('C') & 0x8000)
+	{
+		keyC = true;
+	}
+	else
+	{
+		keyC = false;
+	}
+
 	// Get Jump released
 	if (prevJump && !keyJump)
 	{
@@ -415,11 +428,24 @@ void Game::Update(float deltaTime, float totalTime)
 	// Variable jump height
 	if (vsp > 0 && !keyJump) //if you're moving upwards in the air but not holding down jump
 	{
-		vsp *= 0.98f; //essentially, divide your vertical speed
+		vsp *= (0.99f * deltaTime); //essentially, divide your vertical speed
 	}
 
 	// Calculate gravity
-	vsp -= grv;
+	vsp -= (grv * deltaTime);
+
+	// Toggle Camera
+	if (keyC && !prevC)
+	{
+		if (!controlCamera)
+		{
+			controlCamera = true;
+		}
+		else if (controlCamera)
+		{
+			controlCamera = false;
+		}
+	}
 
 	// Clamp for floor
 	if ((entity1->GetTransform()->GetPosition().y + (vsp * deltaTime) < -1.0f))
@@ -428,16 +454,21 @@ void Game::Update(float deltaTime, float totalTime)
 	}
 
 	// Collsion
-	// if ((entity1->GetTransform()->GetPosition().x))
+	if ((entity1->GetTransform()->GetPosition().x + (hsp * deltaTime) < 1.5f && entity1->GetTransform()->GetPosition().x + (hsp * deltaTime) > -5.5f) && 
+		entity1->GetTransform()->GetPosition().z + (zsp * deltaTime) < 5.5f && entity1->GetTransform()->GetPosition().z + (zsp * deltaTime) > -1.5f)
+	{
+		hsp = 0.0f;
+		zsp = 0.0f;
+	}
 
 	// Record jump for this frame for next
 	prevJump = keyJump;
-
+	prevC = keyC;
 	// Apply physics
 	entity1->GetTransform()->MoveAbsolute(hsp * deltaTime, vsp * deltaTime, zsp * deltaTime);
 
 	// Update Camera
-	camera->SetTransform(entity1->GetTransform()->GetPosition().x, 5.0f, (entity1->GetTransform()->GetPosition().z - 20.0f));
+	if(!controlCamera) camera->SetTransform(entity1->GetTransform()->GetPosition().x, 5.0f, (entity1->GetTransform()->GetPosition().z - 20.0f));
 
 
 	//entity1->GetTransform()->Rotate(0.0f, 0.1f * deltaTime, 0.0f);
