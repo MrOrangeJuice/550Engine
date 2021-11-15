@@ -293,7 +293,7 @@ void Game::CreateBasicGeometry()
 	entity7 = new Entity(mesh7, material1);
 
 	// Move and scale entities
-	entity1->GetTransform()->MoveAbsolute(10.0f, 0.0f, 0.0f);
+	entity1->GetTransform()->MoveAbsolute(10.0f, 5.0f, 0.0f);
 	entity2->GetTransform()->Scale(0.05f, 0.05f, 0.05f);
 	entity2->GetTransform()->MoveAbsolute(5.0f, 2.0f, 0.0f);
 	entity3->GetTransform()->Scale(0.05f, 0.05f, 0.05f);
@@ -304,7 +304,7 @@ void Game::CreateBasicGeometry()
 	entity6->GetTransform()->MoveAbsolute(0.0f, -5.0f, 8.0f);
 	entity6->GetTransform()->Scale(0.1f, 0.1f, 0.1f);
 	entity7->GetTransform()->MoveAbsolute(-2.0f, 1.0f, 2.0f);
-	entity7->GetTransform()->Scale(3.0f, 6.0f, 3.0f);
+	entity7->GetTransform()->Scale(3.0f, 3.0f, 3.0f);
 
 	entityList.push_back(entity1);
 	/*
@@ -359,11 +359,11 @@ void Game::Update(float deltaTime, float totalTime)
 		Quit();
 	if (GetAsyncKeyState(VK_UP) & 0x8000)
 	{
-		zsp = 5.0f;
+		zsp = 10.0f;
 	}
 	else if (GetAsyncKeyState(VK_DOWN) & 0x8000)
 	{
-		zsp = -5.0f;
+		zsp = -10.0f;
 	}
 	else
 	{
@@ -372,11 +372,11 @@ void Game::Update(float deltaTime, float totalTime)
 
 	if (GetAsyncKeyState(VK_LEFT) & 0x8000)
 	{
-		hsp = -5.0f;
+		hsp = -10.0f;
 	}
 	else if (GetAsyncKeyState(VK_RIGHT) & 0x8000)
 	{
-		hsp = 5.0f;
+		hsp = 10.0f;
 	}
 	else
 	{
@@ -454,7 +454,12 @@ void Game::Update(float deltaTime, float totalTime)
 	}
 
 	// Collsion
-	if ((entity1->GetTransform()->GetPosition().x + (hsp * deltaTime) < 1.5f && entity1->GetTransform()->GetPosition().x + (hsp * deltaTime) > -5.5f) && 
+	if ((entity1->GetTransform()->GetPosition().y + (vsp * deltaTime) < 2.0f && entity1->GetTransform()->GetPosition().y + (vsp * deltaTime) > -1.0f) && entity1->GetTransform()->GetPosition().x + (hsp * deltaTime) < 1.5f && entity1->GetTransform()->GetPosition().x + (hsp * deltaTime) > -5.5f 
+		&& entity1->GetTransform()->GetPosition().z + (zsp * deltaTime) < 5.5f && entity1->GetTransform()->GetPosition().z + (zsp * deltaTime) > -1.5f)
+	{
+		vsp = 0.0f;
+	}
+	else if ((entity1->GetTransform()->GetPosition().x + (hsp * deltaTime) < 1.5f && entity1->GetTransform()->GetPosition().x + (hsp * deltaTime) > -5.5f) &&
 		entity1->GetTransform()->GetPosition().z + (zsp * deltaTime) < 5.5f && entity1->GetTransform()->GetPosition().z + (zsp * deltaTime) > -1.5f)
 	{
 		hsp = 0.0f;
