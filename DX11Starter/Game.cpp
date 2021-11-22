@@ -454,16 +454,24 @@ void Game::Update(float deltaTime, float totalTime)
 	}
 
 	// Collsion
+	/*
 	if ((entity1->GetTransform()->GetPosition().y + (vsp * deltaTime) < 2.0f && entity1->GetTransform()->GetPosition().y + (vsp * deltaTime) > -1.0f) && entity1->GetTransform()->GetPosition().x + (hsp * deltaTime) < 1.5f && entity1->GetTransform()->GetPosition().x + (hsp * deltaTime) > -5.5f 
 		&& entity1->GetTransform()->GetPosition().z + (zsp * deltaTime) < 5.5f && entity1->GetTransform()->GetPosition().z + (zsp * deltaTime) > -1.5f)
 	{
 		vsp = 0.0f;
 	}
-	else if ((entity1->GetTransform()->GetPosition().x + (hsp * deltaTime) < 1.5f && entity1->GetTransform()->GetPosition().x + (hsp * deltaTime) > -5.5f) &&
+	*/
+	if ((entity1->GetTransform()->GetPosition().x + (hsp * deltaTime) < 1.5f && entity1->GetTransform()->GetPosition().x + (hsp * deltaTime) > -5.5f) &&
 		entity1->GetTransform()->GetPosition().z + (zsp * deltaTime) < 5.5f && entity1->GetTransform()->GetPosition().z + (zsp * deltaTime) > -1.5f)
 	{
-		hsp = 0.0f;
-		zsp = 0.0f;
+		if (entity1->GetTransform()->GetPosition().x + (hsp * deltaTime) < 1.5f && entity1->GetTransform()->GetPosition().x + (hsp * deltaTime) > -5.5f)
+		{
+			hsp = 0.0f;
+			if (entity1->GetTransform()->GetPosition().z + (zsp * deltaTime) < 5.5f && entity1->GetTransform()->GetPosition().z + (zsp * deltaTime) > -1.5f)
+			{
+				zsp = 0.0f;
+			}
+		}
 	}
 
 	// Record jump for this frame for next
