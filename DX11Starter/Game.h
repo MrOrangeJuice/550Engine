@@ -9,6 +9,7 @@
 #include "WICTextureLoader.h"
 #include "DDSTextureLoader.h"
 #include "Sky.h"
+#include "Collision.h"
 #include <DirectXMath.h>
 #include <wrl/client.h> // Used for ComPtr - a smart pointer for COM objects
 
@@ -161,5 +162,9 @@ private:
 	boolean keyJumpReleased;
 	boolean controlCamera;
 	DWORD previousTime;
+
+	// Collision
+	Collision collision1;
+
 };
 
