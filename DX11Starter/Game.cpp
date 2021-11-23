@@ -56,6 +56,10 @@ Game::~Game()
 	mesh5 = nullptr;
 	delete mesh6;
 	mesh6 = nullptr;
+	delete mesh7;
+	mesh7 = nullptr;
+	delete mesh8;
+	mesh8 = nullptr;
 
 	for (int i = 0; i < entityList.size(); i++)
 	{
@@ -95,6 +99,10 @@ Game::~Game()
 	material5 = nullptr;
 	delete material6;
 	material6 = nullptr;
+	delete material7;
+	material7 = nullptr;
+	delete material8;
+	material8 = nullptr;
 }
 
 // --------------------------------------------------------
@@ -272,6 +280,7 @@ void Game::CreateBasicGeometry()
 	mesh5 = new Mesh(GetFullPathTo("../../Assets/Models/pear.obj").c_str(), device.Get());
 	mesh6 = new Mesh(GetFullPathTo("../../Assets/Models/Desk.obj").c_str(), device.Get());
 	mesh7 = new Mesh(GetFullPathTo("../../Assets/Models/cube.obj").c_str(), device.Get());
+	mesh8 = new Mesh(GetFullPathTo("../../Assets/Models/cube.obj").c_str(), device.Get());
 
 	skyMesh = mesh2;
 
@@ -291,6 +300,7 @@ void Game::CreateBasicGeometry()
 	entity5 = new Entity(mesh5, material5);
 	entity6 = new Entity(mesh6, material6);
 	entity7 = new Entity(mesh7, material1);
+	entity8 = new Entity(mesh8, material1);
 
 	// Move and scale entities
 	entity1->GetTransform()->MoveAbsolute(10.0f, 5.0f, 0.0f);
@@ -305,6 +315,8 @@ void Game::CreateBasicGeometry()
 	entity6->GetTransform()->Scale(0.1f, 0.1f, 0.1f);
 	entity7->GetTransform()->MoveAbsolute(-2.0f, 1.0f, 2.0f);
 	entity7->GetTransform()->Scale(3.0f, 3.0f, 3.0f);
+	entity8->GetTransform()->MoveAbsolute(-12.0f, 1.0f, 5.0f);
+	entity8->GetTransform()->Scale(3.0f, 3.0f, 3.0f);
 
 	entityList.push_back(entity1);
 	/*
@@ -315,6 +327,7 @@ void Game::CreateBasicGeometry()
 	*/
 	entityList.push_back(entity6);
 	entityList.push_back(entity7);
+	entityList.push_back(entity8);
 
 	sky = new Sky(skyMesh, sampler, device, skyBox, pixelShaderSky, vertexShaderSky);
 	hsp = 0.0f;
@@ -330,7 +343,10 @@ void Game::CreateBasicGeometry()
 
 	// Collision boxes
 
-	collision1 = Collision(1.5f,-5.5f,2.0f,-1.0f,5.5,-1.5f);
+	collision1 = Collision(1.5f,-5.5f,2.5f,-1.0f,5.5f,-1.5f);
+	collision2 = Collision(-8.5f, -15.5f, 2.5f, -1.0f, 8.5f, 1.5f);
+	collisions.push_back(collision1);
+	collisions.push_back(collision2);
 	//previousTime = timeGetTime();
 }
 
@@ -458,18 +474,21 @@ void Game::Update(float deltaTime, float totalTime)
 	}
 
 	// Collsion
-	if (entity1->GetTransform()->GetPosition().y + (vsp * deltaTime) < collision1.y1 && entity1->GetTransform()->GetPosition().y + (vsp * deltaTime) > collision1.y2 &&
-		entity1->GetTransform()->GetPosition().x < collision1.x1 && entity1->GetTransform()->GetPosition().x > collision1.x2 &&
-		entity1->GetTransform()->GetPosition().z < collision1.z1 && entity1->GetTransform()->GetPosition().z > collision1.z2)
+	for (int i = 0; i < collisions.size(); i++)
 	{
-		vsp = 0.0f;
-	}
-	if (entity1->GetTransform()->GetPosition().x + (hsp * deltaTime) < collision1.x1 && entity1->GetTransform()->GetPosition().x + (hsp * deltaTime) > collision1.x2 &&
-		entity1->GetTransform()->GetPosition().z + (zsp * deltaTime) < collision1.z1 && entity1->GetTransform()->GetPosition().z + (zsp * deltaTime) > collision1.z2 &&
-		entity1->GetTransform()->GetPosition().y < collision1.y1 && entity1->GetTransform()->GetPosition().y > collision1.y2)
-	{
-		hsp = 0.0f;
-		zsp = 0.0f;
+		if (entity1->GetTransform()->GetPosition().y + (vsp * deltaTime) < collisions[i].y1 && entity1->GetTransform()->GetPosition().y + (vsp * deltaTime) > collisions[i].y2 &&
+			entity1->GetTransform()->GetPosition().x < collisions[i].x1 && entity1->GetTransform()->GetPosition().x > collisions[i].x2 &&
+			entity1->GetTransform()->GetPosition().z < collisions[i].z1 && entity1->GetTransform()->GetPosition().z > collisions[i].z2)
+		{
+			vsp = 0.0f;
+		}
+		if (entity1->GetTransform()->GetPosition().x + (hsp * deltaTime) < collisions[i].x1 && entity1->GetTransform()->GetPosition().x + (hsp * deltaTime) > collisions[i].x2 &&
+			entity1->GetTransform()->GetPosition().z + (zsp * deltaTime) < collisions[i].z1 && entity1->GetTransform()->GetPosition().z + (zsp * deltaTime) > collisions[i].z2 &&
+			entity1->GetTransform()->GetPosition().y < collisions[i].y1 && entity1->GetTransform()->GetPosition().y > collisions[i].y2)
+		{
+			hsp = 0.0f;
+			zsp = 0.0f;
+		}
 	}
 
 	// Record jump for this frame for next

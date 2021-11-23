@@ -42,6 +42,7 @@ private:
 	Mesh* mesh5;
 	Mesh* mesh6;
 	Mesh* mesh7;
+	Mesh* mesh8;
 
 	// Make entities
 	Entity* entity1;
@@ -51,6 +52,7 @@ private:
 	Entity* entity5;
 	Entity* entity6;
 	Entity* entity7;
+	Entity* entity8;
 
 	std::vector<Entity*> entityList;
 
@@ -62,6 +64,7 @@ private:
 	Material* material5;
 	Material* material6;
 	Material* material7;
+	Material* material8;
 
 	// Camera
 	Camera* camera;
@@ -164,7 +167,8 @@ private:
 	DWORD previousTime;
 
 	// Collision
+	vector<Collision> collisions;
 	Collision collision1;
-
+	Collision collision2;
 };
 
