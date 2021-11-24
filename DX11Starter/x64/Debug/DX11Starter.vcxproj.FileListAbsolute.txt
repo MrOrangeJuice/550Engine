@@ -7,7 +7,6 @@ C:\Users\BigBertha\Documents\GitHub\550Engine\DX11Starter\x64\Debug\DX11Starter.
 C:\Users\BigBertha\Documents\GitHub\550Engine\DX11Starter\x64\Debug\xapobaseredist.pdb
 C:\Users\BigBertha\Documents\GitHub\550Engine\DX11Starter\x64\Debug\xaudio2_9redist.pdb
 C:\Users\BigBertha\Documents\GitHub\550Engine\DX11Starter\x64\Debug\xaudio2_9redist.dll
-C:\Users\parro\Documents\GitHub\550Engine\DX11Starter\x64\Debug\DX11Starter.vcxproj.CopyComplete
 C:\Users\parro\Documents\GitHub\550Engine\DX11Starter\x64\Debug\DX11Starter.exe
 C:\Users\parro\Documents\GitHub\550Engine\DX11Starter\x64\Debug\xapobaseredist.pdb
 C:\Users\parro\Documents\GitHub\550Engine\DX11Starter\x64\Debug\xaudio2_9redist.pdb

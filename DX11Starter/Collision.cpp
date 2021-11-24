@@ -1,5 +1,6 @@
 #include "Collision.h"
 
+// Default constructor
 Collision::Collision()
 {
 	this->x1 = 0.0f;
@@ -10,6 +11,7 @@ Collision::Collision()
 	this->z2 = 0.0f;
 }
 
+// Set collision box values
 Collision::Collision(float x1, float x2, float y1, float y2, float z1, float z2)
 {
 	this->x1 = x1;
