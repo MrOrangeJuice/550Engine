@@ -170,5 +170,6 @@ private:
 	vector<Collision> collisions;
 	Collision collision1;
 	Collision collision2;
+	Collision collision3;
 };
 

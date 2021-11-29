@@ -345,8 +345,10 @@ void Game::CreateBasicGeometry()
 
 	collision1 = Collision(1.5f,-5.5f,2.5f,-1.0f,5.5f,-1.5f);
 	collision2 = Collision(-8.5f, -15.5f, 2.5f, -1.0f, 8.5f, 1.5f);
+	collision3 = Collision(20.0f,-20.0f,0.0f,-10.0f,20.0f,-20.0f);
 	collisions.push_back(collision1);
 	collisions.push_back(collision2);
+	collisions.push_back(collision3);
 	//previousTime = timeGetTime();
 }
 
