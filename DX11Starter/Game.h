@@ -161,6 +161,7 @@ private:
 	boolean keyC;
 	boolean prevC;
 	boolean canJump;
+	boolean onGround;
 	boolean keyJump;
 	boolean keyJumpReleased;
 	boolean controlCamera;

@@ -335,6 +335,7 @@ void Game::CreateBasicGeometry()
 	zsp = 0.0f;
 	grv = 0.1f;
 	canJump = true;
+	onGround = false;
 	prevJump = false;
 	prevC = false;
 	keyJump = false;
@@ -345,7 +346,7 @@ void Game::CreateBasicGeometry()
 
 	collision1 = Collision(1.5f,-5.5f,2.5f,-1.0f,5.5f,-1.5f);
 	collision2 = Collision(-8.5f, -15.5f, 2.5f, -1.0f, 8.5f, 1.5f);
-	collision3 = Collision(20.0f,-20.0f,0.0f,-10.0f,20.0f,-20.0f);
+	collision3 = Collision(20.0f,-20.0f,-1.0f,-10.0f,20.0f,-20.0f);
 	collisions.push_back(collision1);
 	collisions.push_back(collision2);
 	collisions.push_back(collision3);
@@ -441,10 +442,11 @@ void Game::Update(float deltaTime, float totalTime)
 	}
 
 	// Jump
-	if (keyJump && canJump && ((entity1->GetTransform()->GetPosition().y - (grv * deltaTime) < -1.0f)))
+	if (keyJump && canJump && onGround)
 	{
 		vsp = 15.0f;
 		canJump = false;
+		onGround = false;
 	}
 
 	// Variable jump height
@@ -470,7 +472,7 @@ void Game::Update(float deltaTime, float totalTime)
 	}
 
 	// Clamp for floor
-	if ((entity1->GetTransform()->GetPosition().y + (vsp * deltaTime) < -1.0f))
+	if ((entity1->GetTransform()->GetPosition().y + (vsp * deltaTime) < -100.0f))
 	{
 		vsp = 0.0f;
 	}
@@ -483,12 +485,18 @@ void Game::Update(float deltaTime, float totalTime)
 			entity1->GetTransform()->GetPosition().z < collisions[i].z1 && entity1->GetTransform()->GetPosition().z > collisions[i].z2)
 		{
 			vsp = 0.0f;
+			onGround = true;
 		}
 		if (entity1->GetTransform()->GetPosition().x + (hsp * deltaTime) < collisions[i].x1 && entity1->GetTransform()->GetPosition().x + (hsp * deltaTime) > collisions[i].x2 &&
-			entity1->GetTransform()->GetPosition().z + (zsp * deltaTime) < collisions[i].z1 && entity1->GetTransform()->GetPosition().z + (zsp * deltaTime) > collisions[i].z2 &&
+			entity1->GetTransform()->GetPosition().z < collisions[i].z1 && entity1->GetTransform()->GetPosition().z > collisions[i].z2 &&
 			entity1->GetTransform()->GetPosition().y < collisions[i].y1 && entity1->GetTransform()->GetPosition().y > collisions[i].y2)
 		{
 			hsp = 0.0f;
+		}
+		if (entity1->GetTransform()->GetPosition().x < collisions[i].x1 && entity1->GetTransform()->GetPosition().x > collisions[i].x2 &&
+			entity1->GetTransform()->GetPosition().z + (zsp * deltaTime) < collisions[i].z1 && entity1->GetTransform()->GetPosition().z + (zsp * deltaTime) > collisions[i].z2 &&
+			entity1->GetTransform()->GetPosition().y < collisions[i].y1 && entity1->GetTransform()->GetPosition().y > collisions[i].y2)
+		{
 			zsp = 0.0f;
 		}
 	}
