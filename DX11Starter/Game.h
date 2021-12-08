@@ -53,6 +53,9 @@ private:
 	Entity* entity6;
 	Entity* entity7;
 	Entity* entity8;
+	Entity* entity9;
+	Entity* entity10;
+	Entity* entity11;
 
 	std::vector<Entity*> entityList;
 
@@ -172,5 +175,8 @@ private:
 	Collision collision1;
 	Collision collision2;
 	Collision collision3;
+	Collision collision4;
+	Collision collision5;
+	Collision collision6;
 };
 

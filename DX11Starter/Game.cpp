@@ -301,6 +301,9 @@ void Game::CreateBasicGeometry()
 	entity6 = new Entity(mesh6, material6);
 	entity7 = new Entity(mesh7, material1);
 	entity8 = new Entity(mesh8, material1);
+	entity9 = new Entity(mesh7, material2);
+	entity10 = new Entity(mesh7, material3);
+	entity11 = new Entity(mesh7, material4);
 
 	// Move and scale entities
 	entity1->GetTransform()->MoveAbsolute(10.0f, 5.0f, 0.0f);
@@ -317,6 +320,12 @@ void Game::CreateBasicGeometry()
 	entity7->GetTransform()->Scale(3.0f, 3.0f, 3.0f);
 	entity8->GetTransform()->MoveAbsolute(-12.0f, 1.0f, 5.0f);
 	entity8->GetTransform()->Scale(3.0f, 3.0f, 3.0f);
+	entity9->GetTransform()->MoveAbsolute(0.0f, -1.0f, 30.0f);
+	entity9->GetTransform()->Scale(8.0f, 2.0f, 10.0f);
+	entity10->GetTransform()->MoveAbsolute(5.0f, 1.0f, 44.0f);
+	entity10->GetTransform()->Scale(8.0f, 2.0f, 10.0f);
+	entity11->GetTransform()->MoveAbsolute(-5.0f, 3.0f, 58.0f);
+	entity11->GetTransform()->Scale(8.0f, 2.0f, 10.0f);
 
 	entityList.push_back(entity1);
 	/*
@@ -328,6 +337,9 @@ void Game::CreateBasicGeometry()
 	entityList.push_back(entity6);
 	entityList.push_back(entity7);
 	entityList.push_back(entity8);
+	entityList.push_back(entity9);
+	entityList.push_back(entity10);
+	entityList.push_back(entity11);
 
 	sky = new Sky(skyMesh, sampler, device, skyBox, pixelShaderSky, vertexShaderSky);
 	hsp = 0.0f;
@@ -346,10 +358,16 @@ void Game::CreateBasicGeometry()
 
 	collision1 = Collision(1.5f,-5.5f,2.5f,-1.0f,5.5f,-1.5f);
 	collision2 = Collision(-8.5f, -15.5f, 2.5f, -1.0f, 8.5f, 1.5f);
-	collision3 = Collision(20.0f,-20.0f,-1.0f,-10.0f,20.0f,-20.0f);
+	collision3 = Collision(21.0f,-20.0f,-1.0f,-10.0f,20.0f,-3.0f);
+	collision4 = Collision(5.0f,-5.0f,0.0f,-7.0f,36.0f,24.0f);
+	collision5 = Collision(10.0f, 0.0f, 2.0f, -5.0f, 50.0f, 38.0f);
+	collision6 = Collision(0.0f, -10.0f, 4.0f, -3.0f, 64.0f, 52.0f);
 	collisions.push_back(collision1);
 	collisions.push_back(collision2);
 	collisions.push_back(collision3);
+	collisions.push_back(collision4);
+	collisions.push_back(collision5);
+	collisions.push_back(collision6);
 	//previousTime = timeGetTime();
 }
 
@@ -442,7 +460,7 @@ void Game::Update(float deltaTime, float totalTime)
 	}
 
 	// Jump
-	if (keyJump && canJump && onGround)
+	if (keyJump && canJump && onGround && vsp == 0.0f)
 	{
 		vsp = 15.0f;
 		canJump = false;
@@ -472,9 +490,10 @@ void Game::Update(float deltaTime, float totalTime)
 	}
 
 	// Clamp for floor
-	if ((entity1->GetTransform()->GetPosition().y + (vsp * deltaTime) < -100.0f))
+	if ((entity1->GetTransform()->GetPosition().y + (vsp * deltaTime) < -20.0f))
 	{
 		vsp = 0.0f;
+		entity1->GetTransform()->SetPosition(10.0f, 5.0f, 0.0f);
 	}
 
 	// Collsion
@@ -508,7 +527,7 @@ void Game::Update(float deltaTime, float totalTime)
 	entity1->GetTransform()->MoveAbsolute(hsp * deltaTime, vsp * deltaTime, zsp * deltaTime);
 
 	// Update Camera
-	if(!controlCamera) camera->SetTransform(entity1->GetTransform()->GetPosition().x, 5.0f, (entity1->GetTransform()->GetPosition().z - 20.0f));
+	if(!controlCamera) camera->SetTransform(entity1->GetTransform()->GetPosition().x, (entity1->GetTransform()->GetPosition().y + 5.0f), (entity1->GetTransform()->GetPosition().z - 20.0f));
 
 
 	//entity1->GetTransform()->Rotate(0.0f, 0.1f * deltaTime, 0.0f);
